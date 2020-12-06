@@ -5,7 +5,8 @@ token = os.getenv('git_token')
 g = Github(token)
 repo = g.get_repo("crowdzamboss/M2Anki")
 
-"""i = repo.create_issue(
+"""
+i = repo.create_issue(
     title="Issue Title",
     body="Text of the body.",
     assignee="crowdzamboss",
@@ -13,4 +14,5 @@ repo = g.get_repo("crowdzamboss/M2Anki")
         repo.get_label("good first issue")
     ]
 )
-print(i)"""
+print(i)
+"""
