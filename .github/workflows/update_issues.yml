@@ -21,4 +21,4 @@ jobs:
           python feedback/issue_generator.py #this is the python script for updating the feedback and auto-converting them to github issues
         env:
           git_token: ${{secrets.GH_TOKEN}} #fetches the github api access token from the secrets of the repo
-          google_token: ${{sexrets.GOOGLE_TOKEN}} #fetches the google sheets api token from the secrets of the repo
+          google_token: ${{secrets.GOOGLE_TOKEN}} #fetches the google sheets api token from the secrets of the repo
