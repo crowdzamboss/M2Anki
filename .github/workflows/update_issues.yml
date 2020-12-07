@@ -18,7 +18,7 @@ jobs:
       - run:
           pip install PyGithub google-api-python-client google-auth-httplib2 google-auth-oauthlib #get access to github and google api
       - run:
-          python feedback/issue_generator.py #this is the python script for updating the feedback and auto-converting them to github issues
+          python feedback/update_issues.py #this is the python script for updating the feedback and auto-converting them to github issues
         env: 
           GOOGLE_API_CREDENTIALS: ${{ secrets.GOOGLE_API_CREDENTIALS}}
           git_token: ${{secrets.GH_TOKEN}} #fetches the github api access token from the secrets of the repo
