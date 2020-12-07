@@ -22,4 +22,3 @@ jobs:
         env: 
           GOOGLE_API_CREDENTIALS: ${{ secrets.GOOGLE_API_CREDENTIALS}}
           git_token: ${{secrets.GH_TOKEN}} #fetches the github api access token from the secrets of the repo
-          google_token: ${{secrets.GOOGLE_TOKEN}} #fetches the google sheets api token from the secrets of the repo
